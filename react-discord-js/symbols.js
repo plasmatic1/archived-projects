@@ -1,0 +1,20 @@
+module.exports = {
+	arrowForward: '\u{25b6}',
+	arrowBackward: '\u{25c0}',
+	fastForward: '\u{23e9}',
+	fastRewind: '\u{23ea}',
+	next: '\u{23ed}',
+	previous: '\u{23ee}',
+	eject: '\u{23cf}',
+	stop: '\u{23f9}',
+	record: '\u{23fa}',
+	ok: '\u{1f197}',
+	ABCD: '\u{1f520}',
+	abcd: '\u{1f521}',
+	numbers: '\u{1f522}',
+	hashtag: '\u{23}',
+	asterisk: '\u{2a}',
+	up: '\u{1f199}',
+	upArrow: '\u{1f53c}',
+	downArrow: '\u{1f53d}'
+};

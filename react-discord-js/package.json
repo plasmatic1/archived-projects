@@ -1,0 +1,15 @@
+{
+  "name": "react-discord-js",
+  "version": "1.0.0",
+  "description": "Library for reaction handling in discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clipboardy": "^1.1.4",
+    "discord.js": "^11.2.1"
+  }
+}

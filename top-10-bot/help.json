@@ -1,0 +1,68 @@
+{
+    "topBanner": "\\*\\***Available Commands**\\*\\*",
+    "footnoteBanner": "\\*\\***Footnotes**\\*\\*",
+    "footnotes": [
+        "_*The configuration value 'entryFormat' allows for the following replacements: $placement, $name, $author, and $percent_",
+        "_Also, the configuration value 'submissionFormat' allows for the following replacements: $player, $percent, $proof, and $hz_",
+        "_\\*\\*Entry and submission indexes are 0-based_"
+    ],
+
+    "categories": {
+        "creation": {
+            "name": "Leaderboard Creation and Configuration",
+            "lines": [
+                "- lbinit: Initializes the leaderboard system for this server",
+                "- lbdelete: Removes the leaderboard system for this server",
+                "- lbmodrole [role]: Sets (or gets if argument 'role' is not provided) the moderator role for this server (Mod role defaults to moderator upon using 'lbinit')",
+                "- lbconfig [key] [value]: Allows for viewing and editing of the config\\*"
+            ]
+        },
+        "entry": {
+            "name": "Leaderboard Entry Management",
+            "lines": [
+                "- lbsetentry [entry]: Entry needs to be in key-value pairs (i.e. 'key=value,key2=value2,...'), these pairs need to include the [placement] of the entry (a **number** from 1 - entryCount), the [name] of the level, the [author], and the [percent] needed to qualify",
+                "- lblistentries: List all of the current levels in the demonlist",
+                "- lbremoveentry [index]: Removes entry [index]",
+                "- lbtruncateentries: Truncates the entry list to cfg.entryCount"
+            ]
+        },
+        "messages": {
+            "name": "Leaderboard Message Management",
+            "lines": [
+                "- lbcreatelbmessage: Creates the leaderboard message",
+                "- lbdeletelbmessage: Deletes the leaderboard message",
+                "- lbreloadlbmessage: Updates (reloads) the leaderboard message"
+            ]
+        },
+        "record": {
+            "name": "Record Management",
+            "lines": [
+                "- lbsubmitrecord [record]: Record needs to be in key-value pairs (i.e. 'key=value,key2=value2,...'), these pairs need to include the [placement] of the entry (a **number** from 0 - entryCount), the [player] who got the record, the [percent] they scored, a link to [proof], and the refresh rate used in [hz]",
+                "- lblistpending: List the current pending records",
+                "- lbapproverecord [index]: Approve record number [index]",
+                "- lbrejectrecord [index]: Reject record number [index]",
+                "- lbremoveapprovedrecord [entry] [submission]: Removes submission [submission] from entry [entry]"
+            ]
+        },
+        "misc": {
+            "name": "Misc. Commands",
+            "lines": [
+                "- help: Displays this message",
+                "- github: Displays a link to the github repo for this bot"
+            ]
+        },
+        "admin": {
+            "name": "Bot Administration (Owner Only)",
+            "lines": [
+                "- printdataobj: Prints the data object",
+                "- reloadlb: Reloads data"
+            ]
+        },
+        "all": {
+            "name": "All Commands",
+            "lines": [
+                "https://github.com/Elytrus/top-10-bot/blob/master/README.md"
+            ]
+        }
+    }
+}

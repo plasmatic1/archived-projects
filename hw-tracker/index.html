@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Homework Manager
+	</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+	<style>
+		button{
+			font-family: "Ubuntu" sans-serif;
+		}
+
+		.container{
+			float: left;
+			width: 100%;
+			height: 100%;
+		}
+
+		.homework-assignment{
+			/*TODO: CSS*/
+		}
+
+		.remove{
+			font-size: 10px;
+			height: 5%;
+		}
+
+		.optional{
+			color: green;
+		}
+
+		#homework-input{
+			margin: 5px 5px 5px 5px;
+			float: left;
+		}
+
+		#homework-display{
+			margin: 5px;
+			float: right;
+			width: 50%;
+			height: 75%;
+		}
+
+		#error-logs{
+			margin: 5px;
+			bottom: 10px;
+			padding: 30px 20px;
+			position: fixed;
+			width: 97%;
+			height: 18%;
+			color: red;
+		}
+
+		div#homework-input *{
+			margin: 2.5px 3px;
+			font-family: "Ubuntu" sans-serif;
+		}
+
+		div#homework-input span{
+			/*d*/
+		}
+
+		div input{
+			/*background-color: rgba(0, 0, 0, 0);*/
+			border-style: solid solid solid none;
+			color: black;
+			border: 3px black;
+		}
+
+		div#hw_assignment_type button, div#hw_modify_due_date button{
+			margin: 0px 0px 0px 0px;
+		}
+
+		#hw_assignment_due_date{
+			width: 31%;
+		}
+
+		#hw_assignment_is_optional #hw_assignment_is_indeterminate_date{
+			background-color: rgba(0, 0, 0, 0);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron" id="homework-input">
+			<h3>Add New Homework Assignment</h3>
+			<span>Name:</span><input type="text" id="hw_assignment_name" maxlength="25"><br>
+			<span>Subject:</span><input type="text" id="hw_assignment_subject" maxlength="25"><br>
+			<span>Due Date:</span><input type="text" id="hw_assignment_due_date" maxlength="22" readonly>
+
+			<div class="btn-group" role="group" id="hw_modify_due_date">
+  				<button type="button" class="btn btn-secondary" id="hw_increment_due_date" mod="-1"><</button>
+  				<button type="button" class="btn btn-secondary" id="hw_decrement_due_date" mod="1">></button>
+  				<button type="button" class="btn btn-secondary" id="hw_speed_modify_due_date">+</button>
+			</div><br>
+
+			<!-- <input type="text" id="hw_assignment_due_date_month" maxlength="2"><span><b>-</b></span> -->
+			<!-- <input type="text" id="hw_assignment_due_date_day" maxlength="2"><br> -->
+
+			<!-- TODO: Finish change to Button Group (Boostrap) -->
+			<span>Assignment Type:</span>
+			<div class="btn-group" role="group" id="hw_assignment_type">
+  				<button type="button" class="btn btn-secondary" id="hw_assignment_type_assignment" atype="assignment">Assignment</button>
+  				<button type="button" class="btn btn-secondary" id="hw_assignment_type_project" atype="project">Project</button>
+  				<button type="button" class="btn btn-secondary" id="hw_assignment_type_daily_practice" atype="daily">Daily Practice</button>
+  				<button type="button" class="btn btn-secondary" id="hw_assignment_type_registration" atype="registration">Registration</button>
+			</div><br>
+
+			<input type="checkbox" value="isOptional" id="hw_assignment_is_optional"><span>Optional</span><br>
+			<input type="checkbox" value="isIndeterminate" id="hw_assignment_is_indeterminate_date"><span>Indeterminate Date</span><br>
+
+			<button type="button" id="hw_assignment_submit" class="btn btn-secondary">Submit</button>
+			<button type="button" id="hw_update" class="btn btn-secondary">Update</button>
+		</div>
+
+		<div class="jumbotron" id="error-logs">
+			<!-- TODO: Error Logging -->
+			<p id="main-log"></p>
+		</div>
+
+		<div class="jumbotron" id="homework-display">
+			<h2>Current Assignments</h2>
+			<h4>Assignments</h4>
+			<div id="hw_display_assignments"></div>
+			<h4>Projects</h4>
+			<div id="hw_display_projects"></div>
+			<h4>Practice</h4>
+			<div id="hw_display_practice"></div>
+			<h4>Registration</h4>
+			<div id="hw_display_registration"></div>
+			<!-- TODO: Homework display (with remove buttons) and update assignments function -->
+		</div>
+
+		<table>
+
+		</table>
+	</div>
+
+	<script>
+		//VARS 
+		var io = io();
+		var currentType = undefined;
+		var date = undefined;
+		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+		//JQUERY VARIABLES
+
+		var $dueDate = $('#hw_assignment_due_date');
+
+		var $name = $('#hw_assignment_name');
+		var $subject = $('#hw_assignment_subject');
+		var $isOptional = $('#hw_assignment_is_optional');
+		var $isIndeterminate = $('#hw_assignment_is_indeterminate_date');
+
+		var $hw_assignments = $('#hw_display_assignments');
+		var $hw_projects = $('#hw_display_projects');
+		var $hw_practice = $('#hw_display_practice');
+		var $hw_registration = $('#hw_display_registration');
+
+		$isOptional.attr('checked', false);
+		$isIndeterminate.attr('checked', false);
+
+		var isSpeedy = false;
+
+		//SOCKETIO
+
+		io.emit('homework-request');
+
+		io.on('homework-received', function(data){
+			var obj = JSON.parse(data);
+			console.log('Received homework:', obj);
+
+			renderHomework(obj, 'assignments', $hw_assignments);
+			renderHomework(obj, 'projects', $hw_projects);
+			renderHomework(obj, 'practice', $hw_practice);
+			renderHomework(obj, 'registration', $hw_registration);
+		});
+
+		io.on('homework-error', function(data){
+			$('#error-logs').html(data);
+		});
+
+		//JQUERY
+
+		$(document).ready(function(e){
+			date = addDefaultDate($dueDate);
+		});
+
+		$('#hw_assignment_type > button').click(function(e){
+			currentType = $(this).attr('atype');
+			$('#hw_assignment_type').children().removeAttr('disabled');
+			$(this).attr('disabled', 'disabled');
+			// console.log('tetstsfdf');
+		});
+
+		$('#hw_modify_due_date > button').click(function(e){
+			// $(this).attr('readonly', 'readonly');
+			var inc = parseInt($(this).attr('mod'));
+
+			if(isNaN(inc)){
+				isSpeedy = !isSpeedy;
+				if(isSpeedy){
+					$(this).css('background-color', '#89ffbe');
+				}
+				else{
+					$(this).css('background-color', '#ffffff');
+				}
+				return;
+			}
+
+			if(isSpeedy){
+				inc *= 5;
+			}
+
+			date.setDate(date.getDate() + inc);
+			setDate($dueDate, date);
+			// $(this).removeAttr('readonly');
+		});
+
+		$('#hw_assignment_submit').click(function(e){
+			var name = $name.val();
+			var subject = $subject.val();
+			// var dueDate = $dueDate.val().split(' ')[0];
+			var dueDate = dateString(date);
+			var isOptional = $isOptional.is(':checked');
+			var isIndeterminate = $isIndeterminate.is(':checked');
+
+			// console.log(isOptional);
+			// console.log(isIndeterminate);
+
+			const errStart = 'Error while submitting homework: Invalid field ';
+			var errStacktrace = '';
+			var err = false;
+
+			if(!name){
+				err = true;
+				errStacktrace += errStart + '"Name"<br>';
+			}
+			if(!subject){
+				err = true;
+				errStacktrace += errStart + '"Subject"<br>';
+			}
+			if(!dueDate){
+				err = true;
+				errStacktrace += errStart + '"Due Date"<br>';
+			}
+			if(!currentType){
+				err = true;
+				errStacktrace += errStart + '"Assignment Type"<br>';
+			}
+
+			if(err){
+				$('#error-logs').html(errStacktrace);
+				console.log('error!');
+			}
+			else{
+				$('#error-logs').html('<span style="color: green">Success!</span>');
+				io.emit('homework-submit', JSON.stringify({
+					// TODO: Homework object definitions
+					name: name,
+					subject: subject,
+					due_date: dueDate,
+					type: currentType,
+					indeterminate: isIndeterminate ? 1 : 0,
+					optional: isOptional ? 1 : 0
+				}));
+
+				$name.val('');
+				$subject.val('');
+				$isIndeterminate.attr('checked', false);
+				$isOptional.attr('checked', false);
+			}
+		});
+
+		$('#hw_update').click(function(e){
+			io.emit('homework-update');
+		});
+
+		function addDefaultDate($element){
+			var date = new Date();
+			setDate($element, date);
+
+			return date;
+		}
+
+		function setDate($element, date){
+			$element.val(dateString(date) + ' (' + days[date.getDay()] + ')');
+		}
+
+		function dateString(date){
+			return (date.getYear() + 1900) + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+		}
+
+		function homeworkString(obj){
+			var date = '', indeterminate = obj.indeterminate.data[0];
+
+			if(indeterminate == 0){
+				date = new Date(obj.due_date).toString().split(' ').slice(0, 4).join(' ');
+			}
+			else{
+				date = 'n.d.';
+			}
+
+			return '- ' + obj.subject + ': ' + obj.name + ' | ' + date;
+		}
+
+		function renderHomework(obj, key, $element){
+			// console.log(obj, ' | ', obj[key]);
+
+			if(!Array.isArray(obj[key])){
+				console.log('No entries of type', key, 'were found');
+				return;
+			}
+
+			$element.html('');
+
+			obj[key].forEach(assignment => {
+				$('<span class="homework_assignment' + (assignment.optional.data[0] == 1 ? ' optional' : '') + '">' + homeworkString(assignment) + ' </span><button class="remove btn btn-outline-danger" remove_id="' + assignment.id + '">X</button><br>').appendTo($element).click(function(e){
+					io.emit('homework-remove', JSON.stringify({
+						id: $(this).attr('remove_id')
+					}));
+				});
+				console.log(homeworkString(assignment));
+			});
+		}
+
+		// TODO: Button to update homework (homework-request event)
+		// TODO: Button to remove homework
+	</script>
+</body>
+</html>

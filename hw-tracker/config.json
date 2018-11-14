@@ -1,0 +1,8 @@
+{
+	"debug": true,
+	"sql": {
+		"host": "localhost",
+		"user": "root",
+		"password": "admin"
+	}
+}

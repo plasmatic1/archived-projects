@@ -1,0 +1,87 @@
+.container{
+    max-width: 100%;
+}
+
+.head{
+    /* i give you head */
+    margin: 20px 20px;
+    max-width: 100%;
+}
+
+.logo{
+    width: 7%;
+    height: 7%;
+    vertical-align: top;
+    padding: 10px 0px 0px 0px;
+    /* border: 3px solid green; */
+}
+
+.carousel-inner .carousel-item img{
+    width: 200px;
+    height: 50%;
+}
+
+.car-demo{
+    margin: 20px 50px;
+}
+
+.intro-sm{
+    font-size: 20px;
+}
+
+.intro{
+    font-size: 30px;
+}
+
+.intro-lg{
+    font-size: 45px;
+}
+
+.contact {
+    margin-left: 30px;
+}
+
+.contact .row{
+    margin: 40px 0px;
+}
+
+.sm-link-test{
+    vertical-align: middle;
+}
+
+.flex-fill{
+    flex-grow: 5555555; /*Very hacky I know*/
+}
+
+.about-container{
+    margin: 15px;
+}
+
+.about-elem{
+    margin: 25px;
+}
+
+.cars .row{
+    margin: 25px 5px;
+}
+
+.car-caption{
+    font-style: italic;
+}
+
+code{
+    color: darkgray;
+}
+
+.toggle-scip{
+    width: 100%;
+}
+
+.scip-help-text{
+    border: 0px solid black;
+    background: transparent;
+}
+
+.page-top-text{
+    text-align: center;
+}

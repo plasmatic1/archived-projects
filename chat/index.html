@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+		<style>
+			h1, p, ul, span, input{
+				font-family: Ubuntu, Arial;
+			}
+
+			p, li{
+				color: #DDD;
+			}
+
+			ul{
+				list-style-type: none;
+			}
+
+			body{
+				/*background: url("http://www.fullhdwpp.com/wp-content/uploads/programming-and-code-13_www.FullHDWpp.com_.jpg");*/
+				background: url("login-backdrop.jpg");
+			}
+
+			.green{
+				/*color: lime;*/
+			}
+
+			.jumbotron{
+				background-color: rgba(25, 25, 25, 0.75);
+				color: white;
+			}
+
+			.leftext{
+				margin-left: 20px;
+			}
+
+			.enlarge{
+				font-size: 30px; 
+			}
+
+			#login{
+				color: white;
+			}
+
+			#usn-inp{
+				background-color: rgba(0, 0, 0, 0);
+				color: white;
+				border: 2px white;
+				border-style: none none solid none;
+			}
+		</style>
+
+		<title>Welcome to the Anonymous Chat Program!</title>
+	</head>
+	<body>
+		<script>
+			let MIN_LENGTH = 5; //Subtract 1 from actual Value to get proper results
+			let MAX_LENGTH = 24;
+
+			$(document).ready(function(){
+				$('#usn-inp').keyup(function(e){
+					var data = $(this).val();
+					// console.log(data);
+					if(data != undefined && (data.length < MIN_LENGTH || data.length > MAX_LENGTH)){
+						$('#submit-username').attr('disabled', 'disabled');
+					}
+					else{
+						$('#submit-username').removeAttr('disabled');
+					}
+				});
+			});
+		</script>
+
+		<div class-"container">
+			<div class="jumbotron">
+				<div class="leftext">
+					<h1>Anonymous Chat Program</h1>
+					<p>A simple Node.js Chat Program by Plas</p>
+					<hr>
+					<p>To-do List</p>
+					<ul>
+						<li>- Commands</li>
+						<li>- Encryption?</li>
+					</ul>
+				</div>
+			</div>
+			<div id="login">
+				<form action="chat.html" method="GET">
+					<span class="leftext enlarge green">Username: </span><input id="usn-inp" class="enlarge" type="text" name="username"></input>
+					<p class="leftext green">Username must be from 6 to 25 characters long</p>
+					<hr>
+					<input type="submit" id="submit-username" content="Login" class="leftext btn btn-outline-secondary enlarge green" disabled></button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

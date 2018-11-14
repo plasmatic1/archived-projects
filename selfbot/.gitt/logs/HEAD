@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 5940710cd27046b00cd043211ba2d3ed91493915 Plasmatic <unconfigured@null.spigotmc.org> 1504051458 -0400	commit (initial): :octocat: Added .gitattributes & .gitignore files
+5940710cd27046b00cd043211ba2d3ed91493915 05ea1800cbd6d8993bf388f4f0babc8b54741d2f Plasmatic <unconfigured@null.spigotmc.org> 1504051521 -0400	commit: first commit :)
+05ea1800cbd6d8993bf388f4f0babc8b54741d2f aa32cfc34ba2ad2acb7a66cab5cb1d240ab121c0 Plasmatic <unconfigured@null.spigotmc.org> 1504618060 -0400	commit: updated with new commands and start script :)
+aa32cfc34ba2ad2acb7a66cab5cb1d240ab121c0 7ca4137ed909290d0ba67201f68f27f6e6a81aa1 Plasmatic <unconfigured@null.spigotmc.org> 1506996666 -0400	commit: latest commit
+7ca4137ed909290d0ba67201f68f27f6e6a81aa1 4834b06a6a2c0bdd851b37051c94746cbaa9faa9 Plasmatic <unconfigured@null.spigotmc.org> 1516401741 -0500	pull --progress --rebase --prune origin master: checkout 4834b06a6a2c0bdd851b37051c94746cbaa9faa9
+4834b06a6a2c0bdd851b37051c94746cbaa9faa9 137839371ae6392bba171675c8df6d121a46db91 Plasmatic <unconfigured@null.spigotmc.org> 1516401742 -0500	pull --progress --rebase --prune origin master: latest commit
+137839371ae6392bba171675c8df6d121a46db91 137839371ae6392bba171675c8df6d121a46db91 Plasmatic <unconfigured@null.spigotmc.org> 1516401742 -0500	rebase finished: returning to refs/heads/master
+137839371ae6392bba171675c8df6d121a46db91 c2851aba8b8df6e2e882326c2ff3c145d109cf9f Plasmatic <unconfigured@null.spigotmc.org> 1542161295 -0500	commit: commit

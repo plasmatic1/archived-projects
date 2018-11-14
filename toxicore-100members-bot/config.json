@@ -1,0 +1,11 @@
+{
+    "token": "not a real token",
+    "debug": true,
+    "showUrl": false,
+    "prefix": "~",
+    "roles": ["Noble", "Moderator"],
+    "nickFile": "nicks.json",
+    "excludesFile": "excludes.json",
+    "overwriteNick": "Uppish_.Amp",
+    "ownerID": 181462351231320064
+}

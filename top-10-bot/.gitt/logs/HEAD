@@ -1,0 +1,23 @@
+0000000000000000000000000000000000000000 6994ad45faa761c97c03de1fdffca4144711ec4d Plasmatic <unconfigured@null.spigotmc.org> 1533525554 -0400	initial pull
+6994ad45faa761c97c03de1fdffca4144711ec4d 473d8d9e1c6a6d16d998dd6dc651276eb5178c1a Plasmatic <unconfigured@null.spigotmc.org> 1533525584 -0400	commit: adding files
+473d8d9e1c6a6d16d998dd6dc651276eb5178c1a c6e0b3ffefeaeb0b2793a787c440de3dca181da7 Plasmatic <unconfigured@null.spigotmc.org> 1533529350 -0400	commit: basic stuff and also added clipboardy yeet!
+c6e0b3ffefeaeb0b2793a787c440de3dca181da7 c1719468fa29ef050b4a12fcdebdbf0f9d095f44 Plasmatic <unconfigured@null.spigotmc.org> 1533584237 -0400	commit: File reading is complete
+c1719468fa29ef050b4a12fcdebdbf0f9d095f44 308a5c39087f4ff82de9c09ae7ab9c44fb77db21 Plasmatic <unconfigured@null.spigotmc.org> 1534468380 -0400	commit: started work on commands
+308a5c39087f4ff82de9c09ae7ab9c44fb77db21 95271cdc5474cc8039a14ccc9be04a29ac3c4997 Plasmatic <unconfigured@null.spigotmc.org> 1534469619 -0400	commit: fixed permission issues
+95271cdc5474cc8039a14ccc9be04a29ac3c4997 fc08d51300b3617b6254d9d6f3e4f8491173e3f4 Plasmatic <unconfigured@null.spigotmc.org> 1534470885 -0400	commit: moderator role
+fc08d51300b3617b6254d9d6f3e4f8491173e3f4 353e6dbfb29f0e6c70dd78271ed283429bb80e42 Plasmatic <unconfigured@null.spigotmc.org> 1534471930 -0400	commit: configuration command
+353e6dbfb29f0e6c70dd78271ed283429bb80e42 c0d1af6705989b224ba2e9f2ed5c48a56f265e12 Plasmatic <unconfigured@null.spigotmc.org> 1534473333 -0400	commit: created stubs for the rest of the commands and updated help message
+c0d1af6705989b224ba2e9f2ed5c48a56f265e12 d29e9c48dfd8cfa8ac120a04272ce22e2d1d8aba Plasmatic <unconfigured@null.spigotmc.org> 1534473510 -0400	commit: bugfix
+d29e9c48dfd8cfa8ac120a04272ce22e2d1d8aba 1502c66171858b4e75be84d8fcef56355587350f Plasmatic <unconfigured@null.spigotmc.org> 1534473684 -0400	commit: shamless github plug
+1502c66171858b4e75be84d8fcef56355587350f a0ce778e3a1ce7a8b83ec707622a4f3f66b95589 Plasmatic <unconfigured@null.spigotmc.org> 1534476588 -0400	commit: listentries and setentry
+a0ce778e3a1ce7a8b83ec707622a4f3f66b95589 ca0b6c4e467ca1c522b6122fed0292268e66475f Plasmatic <unconfigured@null.spigotmc.org> 1534478784 -0400	commit: fixed message thing
+ca0b6c4e467ca1c522b6122fed0292268e66475f 6c6eb0dccb64d2c972450a37a97283d8d4af1500 Plasmatic <unconfigured@null.spigotmc.org> 1534481918 -0400	commit: leaderboard message commands
+6c6eb0dccb64d2c972450a37a97283d8d4af1500 5628f2570ef0d044eb9f89f6b23963c10831f9f3 Plasmatic <unconfigured@null.spigotmc.org> 1534482159 -0400	commit: fixed render bug
+5628f2570ef0d044eb9f89f6b23963c10831f9f3 a6e81f01a1d279065b0d11038f5d7668194a04f6 Plasmatic <unconfigured@null.spigotmc.org> 1534553730 -0400	commit: finished most commands
+a6e81f01a1d279065b0d11038f5d7668194a04f6 d89a9e8542e2921d0cdff64613de0a115304650c Plasmatic <unconfigured@null.spigotmc.org> 1534555197 -0400	commit: finished bot basically
+d89a9e8542e2921d0cdff64613de0a115304650c 8cadb1da2eeee8cbd7d2e7d843013c22c4501f48 Plasmatic <unconfigured@null.spigotmc.org> 1534556680 -0400	commit: updated ~help
+8cadb1da2eeee8cbd7d2e7d843013c22c4501f48 ad7a44f8fd7f74c638f8630ad08e99f8cfe555e1 Plasmatic <unconfigured@null.spigotmc.org> 1534556691 -0400	pull --tags origin master: Merge made by the 'recursive' strategy.
+ad7a44f8fd7f74c638f8630ad08e99f8cfe555e1 80d4d5c6c7b0f14958bf80098ff38611d55ce9da Plasmatic <unconfigured@null.spigotmc.org> 1534557733 -0400	commit: ~lbsetentry bugfix
+80d4d5c6c7b0f14958bf80098ff38611d55ce9da 8b39d80a8cfe8a62f05d6ffe1c2753ceb689ce9c Plasmatic <unconfigured@null.spigotmc.org> 1534558694 -0400	commit: bugfixes
+8b39d80a8cfe8a62f05d6ffe1c2753ceb689ce9c 248c1c8a44daef6981fc356c9fb004446851bc91 Plasmatic <unconfigured@null.spigotmc.org> 1534560949 -0400	commit: bugfix
+248c1c8a44daef6981fc356c9fb004446851bc91 bcf78f5aa886b80b5d5766864ee2a611de7082c4 Plasmatic <unconfigured@null.spigotmc.org> 1534638978 -0400	pull: Fast-forward

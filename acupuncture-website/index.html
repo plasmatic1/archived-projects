@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+  <title>Acupuncture</title>
+</head>
+
+<body>
+	<div class="container base-margin">
+		<div class="row">
+      <div class="col">
+          <div id="gallery" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active slide">
+                  <img class="d-block w-100" src="imgs/gallery-1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item slide">
+                  <img class="d-block w-100" src="imgs/gallery-2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item slide">
+                  <img class="d-block w-100" src="imgs/gallery-3.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item slide">
+                  <img class="d-block w-100" src="imgs/gallery-4.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item slide">
+                  <img class="d-block w-100" src="imgs/gallery-5.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#gallery" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#gallery" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+      </div>
+      <div class="col">
+          <div class="card-body">
+              <h4 class="card-title gallery-title"></h4>
+              <p class="card-text gallery-text"></p>
+            </div>
+      </div>
+    </div>
+  </div>
+  
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="univ.js"></script>
+  <script>
+    const TITLES = [
+      "Acupuncture",
+      "Moxibustion Treatment",
+      "Cupping",
+      "Scrapping",
+      "Massage"
+    ]
+		const TEXT = [
+		        `针刺治疗是中医的主要治疗手段之一。通过刺激人体腧穴，疏通经络，调和气血，调节脏腑阴阳，达到扶正祛邪、维护机体健康、和治疗疾病的目的，有极高的临床疗效。<br>
+		         Acupuncture is one of the main treatments for Chinese medicine. By stimulating the body's acupoints, dredging the meridians, reconciling the qi and blood, regulating the yin and yang of the organs, achieving the purpose of upholding the evils, maintaining the health of the body, and treating diseases, it has a very high clinical efficacy.`,
+		        `艾灸治疗是中医的重要外治治疗手段之一。通过对体表穴位的烧灼，温熨，经络的传导，起到温通气血，扶正祛邪的目的。<br>
+		        Moxibustion treatment is one of the important external treatment methods of TCM. Through the burning of the body surface points, warm iron, conduction of the meridians, play the role of warm blood, righting the evil.`,
+		        `拔罐治疗（cupping），是有着悠久历史的中医治疗手段之一。是以罐为工具，利用燃火、抽气等方法，造成局部瘀血，以达到通经活络、行气活血、消肿止痛、祛风散寒的作用。<br>
+		        Cupping is one of the traditional Chinese medicine treatments with a long history. Using cans as a tool, the use of fire, smoking and other methods, resulting in partial blood stasis, in order to achieve through the active, qi and blood circulation, swelling and pain, Qufeng cold.`,
+		        `刮痧治疗是传统的自然疗法之一。用器具在皮肤相关部位刮拭，以达到疏通经络、活血化瘀之目的。<br> 
+		        Scrapping is one of the traditional natural treatments. Wipe the swab with the appliance in the relevant part of the skin to achieve the purposes of dredging the meridians and promoting blood circulation.`,
+		        `推拿治疗（Massage），是一种非药物的中医自然疗法、物理疗法。用手法作用于人体体表的特定部位，达到疏通经络、推行气血、扶伤止痛、祛邪扶正、调和阴阳的疗效。<br> 
+		        Massage is a non-drug natural Chinese medicine and physical therapy. It is applied to the specific parts of the body surface with the help of handwork to achieve the effects of dredging the meridians, promoting qi and blood, assisting in pain relief, eliminating evil and righting, and reconcile yin and yang.`
+		];
+		
+		var $gallery = $('#gallery');
+    var $galleryText = $('.gallery-text');
+    var $galleryTitle = $('.gallery-title');
+
+    setGalleryDescription(0);
+		$gallery.carousel({
+		  interval: 5000
+		})
+		.on('slid.bs.carousel', function (direction, elem, from, to) {
+      console.log('slid event to', direction.to);
+      setGalleryDescription(direction.to);
+    });
+    
+    function setGalleryDescription(index){
+      $galleryTitle.html(TITLES[index]);
+      $galleryText.html(TEXT[index]);
+    }
+  </script>
+</body>
+
+</html>

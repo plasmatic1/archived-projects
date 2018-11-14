@@ -1,0 +1,7 @@
+Split regex
+
+(?<=[)"]|'.')\.(?=[("]|'.')
+
+Spec chars regex
+
+'.'|"'"

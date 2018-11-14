@@ -1,0 +1,586 @@
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+>>> mis
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+>>> mis
+['j', 'k', 'q', 'u', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+>>> mfd
+['H', 'D', 'k', 'L', 'Q', 'u', 'u']
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+>>> mfd
+{'Q', 'u', 'D', 'L', 'k', 'H'}
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+>>> mfd
+{'u', 'D', 'Q', 'H', 'k', 'L'}
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+>>> mis
+{'K', 'F', 'D', 'Z', 'k', 'M', 'Y', 'R', 'A', 'U', 'H', 'W', 'P', 'J', 'O', 'z', 'T', 'L', 'V', 'y', 'X', 'E', 'q', 'N', 'S', 'j', 'B', 'Q', 'C', 'u', 'G'}
+>>> dic['i']
+"('`'|')')"
+>>> dic['t']
+"('['^'/')"
+>>> char
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    char
+NameError: name 'char' is not defined
+>>> ord('[')
+91
+>>> ord('/')
+47
+>>> ord('t')
+116
+>>> 91^47
+116
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+Traceback (most recent call last):
+  File "C:\Users\Moses\Desktop\darklord.py", line 5, in <module>
+    l=w.split('sep')
+AttributeError: 'list' object has no attribute 'split'
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+Traceback (most recent call last):
+  File "C:\Users\Moses\Desktop\darklord.py", line 9, in <module>
+    for k, v in zip(ol, m):
+NameError: name 'ol' is not defined
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+Traceback (most recent call last):
+  File "C:\Users\Moses\Desktop\darklord.py", line 9, in <module>
+    for k, v in zip(os, m):
+NameError: name 'm' is not defined
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+>>> dic
+{'I': "('`'^')')", 'f': "('`'|'&')", ' ': "('{'^'[')", 'a': "('`'|'!')", 'p': "('['^'+')", 'r': "('['^')')", 'o': "('`'|'/')", 'b': '(\'`\'|\'"\')', 'l': "('`'|',')", 'e': "('`'|'%')", 'm': "('`'|'-')", 'c': "('`'|'#')", 'n': "('`'|'.')", "'": '"\'"', 't': "('['^'/')", 's': "('['^'(')", 'v': "('['^'-')", 'd': "('`'|'$')", 'w': "('['^',')", 'i': "('`'|')')", 'h': "('`'|'(')", '*': "'*'", 'g': '(\'`\'|"\'")', 'x': "('['^'#')", ',': "','", '.': '.'}
+>>> mis
+{'P', 'M', 'U', 'W', 'Z', 'z', 'u', 'J', 'A', 'T', 'B', 'S', 'N', 'y', 'V', 'k', 'Y', 'X', 'q', 'D', 'L', 'O', 'F', 'C', 'R', 'j', 'E', 'Q', 'H', 'G', 'K'}
+>>> re.findall
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    re.findall
+NameError: name 're' is not defined
+>>> with open('quantum.txt') as f:
+	global n
+	n=f.readlines()[0]
+
+	
+>>> n
+'(\'[\'^\'+\').(\'[\'^\')\').(\'`\'|\')\').(\'`\'|\'.\').(\'[\'^\'/\').\'"\'.(\'`\'^\')\').(\'`\'|\'&\').(\'{\'^\'[\').(\'`\'|\'!\').(\'{\'^\'[\').(\'[\'^\'+\').(\'[\'^\')\').(\'`\'|\'/\').(\'`\'|\'"\').(\'`\'|\',\').(\'`\'|\'%\').(\'`\'|\'-\').(\'{\'^\'[\').(\'`\'|\'#\').(\'`\'|\'!\').(\'`\'|\'.\')."\'".(\'[\'^\'/\').(\'{\'^\'[\').(\'`\'|\'"\').(\'`\'|\'%\').(\'{\'^\'[\').(\'[\'^\'(\').(\'`\'|\'/\').(\'`\'|\',\').(\'[\'^\'-\').(\'`\'|\'%\').(\'`\'|\'$\').(\'{\'^\'[\').(\'[\'^\',\').(\'`\'|\')\').(\'[\'^\'/\').(\'`\'|\'(\').(\'{\'^\'[\').\'*\'.(\'[\'^\')\').(\'`\'|\'%\').(\'`\'|"\'").(\'`\'|\'%\').(\'[\'^\'#\').\'*\'.\',\'.(\'{\'^\'[\').(\'`\'|\')\').(\'[\'^\'/\')."\'".(\'[\'^\'(\').(\'{\'^\'[\').(\'`\'|\'!\').(\'{\'^\'[\').(\'`\'|\'"\').(\'`\'|\'!\').(\'`\'|\'$\').(\'{\'^\'[\').(\'[\'^\'+\').(\'[\'^\')\').(\'`\'|\'/\').(\'`\'|\'"\').(\'`\'|\',\').(\'`\'|\'%\').(\'`\'|\'-\').\'.\'.\'"\''
+>>> len(n)
+641
+>>> q=re.findall('\'.\'|"\'"', n)
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    q=re.findall('\'.\'|"\'"', n)
+NameError: name 're' is not defined
+>>> impor re
+SyntaxError: invalid syntax
+>>> import re
+>>> q=re.findall('\'.\'|"\'"', n)
+>>> q
+["'['", "'+'", "'['", "')'", "'`'", "')'", "'`'", "'.'", "'['", "'/'", '\'"\'', "'`'", "')'", "'`'", "'&'", "'{'", "'['", "'`'", "'!'", "'{'", "'['", "'['", "'+'", "'['", "')'", "'`'", "'/'", "'`'", '\'"\'', "'`'", "','", "'`'", "'%'", "'`'", "'-'", "'{'", "'['", "'`'", "'#'", "'`'", "'!'", "'`'", "'.'", '"\'"', "'['", "'/'", "'{'", "'['", "'`'", '\'"\'', "'`'", "'%'", "'{'", "'['", "'['", "'('", "'`'", "'/'", "'`'", "','", "'['", "'-'", "'`'", "'%'", "'`'", "'$'", "'{'", "'['", "'['", "','", "'`'", "')'", "'['", "'/'", "'`'", "'('", "'{'", "'['", "'*'", "'['", "')'", "'`'", "'%'", "'`'", '"\'"', "'`'", "'%'", "'['", "'#'", "'*'", "','", "'{'", "'['", "'`'", "')'", "'['", "'/'", '"\'"', "'['", "'('", "'{'", "'['", "'`'", "'!'", "'{'", "'['", "'`'", '\'"\'', "'`'", "'!'", "'`'", "'$'", "'{'", "'['", "'['", "'+'", "'['", "')'", "'`'", "'/'", "'`'", '\'"\'', "'`'", "','", "'`'", "'%'", "'`'", "'-'", "'.'", '\'"\'']
+>>> q=set(q)
+>>> q
+{"'!'", "','", "'*'", "'`'", "'.'", "'+'", '\'"\'', '"\'"', "'{'", "'%'", "'('", "')'", "'#'", "'-'", "'$'", "'&'", "'/'", "'['"}
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+Traceback (most recent call last):
+  File "C:\Users\Moses\Desktop\darklord.py", line 17, in <module>
+    specs=set(re.findall('\'.\'|"\'"', n))
+NameError: name 're' is not defined
+>>> 
+================ RESTART: C:\Users\Moses\Desktop\darklord.py ================
+>>> seps
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    seps
+NameError: name 'seps' is not defined
+>>> specs
+{"'['", "')'", "'/'", "'.'", "'!'", "'#'", "'`'", '\'"\'', "'%'", "'+'", "','", "'('", "'$'", '"\'"', "'{'", "'*'", "'&'", "'-'"}
+>>> reqs=mfd
+>>> reqs
+{'L', 'H', 'Q', 'D', 'k', 'u'}
+>>> mfd
+{'L', 'H', 'Q', 'D', 'k', 'u'}
+>>> reqs=map(ord,reqs)
+>>> reqs
+<map object at 0x0000021E9D28D860>
+>>> reqs=set(reqs)
+>>> reqs
+{68, 72, 107, 76, 81, 117}
+>>> possibles={}
+>>> zspecs=zip(specs, map(ord, specs))
+>>> zspecs
+<zip object at 0x0000021E9D307088>
+>>> for i,j in zspecs:
+	for k,l in zspecs:
+		possibles[j|l]=(i,k,'|')
+		possibles[j^l]=(i,k,'^')
+
+		
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    for i,j in zspecs:
+TypeError: ord() expected a character, but string of length 3 found
+>>> specs=set(map(lambda x:x[1],specs))
+>>> specs
+{'.', '"', '$', "'", '{', '/', '!', '%', ',', '*', '&', ')', '#', '`', '-', '[', '+', '('}
+>>> zspecs=zip(specs, map(ord, specs))
+>>> for i,j in zspecs:
+	for k,l in zspecs:
+		possibles[j|l]=(i,k,'|')
+		possibles[j^l]=(i,k,'^')
+
+		
+>>> possibles
+{46: ('.', '(', '|'), 12: ('.', '"', '^'), 10: ('.', '$', '^'), 47: ('.', '+', '|'), 9: ('.', "'", '^'), 127: ('.', '[', '|'), 85: ('.', '{', '^'), 1: ('.', '/', '^'), 15: ('.', '!', '^'), 11: ('.', '%', '^'), 2: ('.', ',', '^'), 4: ('.', '*', '^'), 8: ('.', '&', '^'), 7: ('.', ')', '^'), 13: ('.', '#', '^'), 110: ('.', '`', '|'), 78: ('.', '`', '^'), 3: ('.', '-', '^'), 117: ('.', '[', '^'), 5: ('.', '+', '^'), 6: ('.', '(', '^')}
+>>> reqs
+{68, 72, 107, 76, 81, 117}
+>>> for i in reqs:
+	print('req %d, in pos %d' %(i, i in possibles))
+
+	
+req 68, in pos 0
+req 72, in pos 0
+req 107, in pos 0
+req 76, in pos 0
+req 81, in pos 0
+req 117, in pos 1
+>>> '$'&'$'
+Traceback (most recent call last):
+  File "<pyshell#59>", line 1, in <module>
+    '$'&'$'
+TypeError: unsupported operand type(s) for &: 'str' and 'str'
+>>> def posib():
+	zspecs=zip(specs, map(ord, specs))
+	for i,j in zspecs:
+		for k,l in zspecs:
+			possibles[j|l]=(i,k,'|')
+			possibles[j^l]=(i,k,'^')
+
+			
+>>> posib()
+>>> possibles
+{46: ('.', '(', '|'), 12: ('.', '"', '^'), 10: ('.', '$', '^'), 47: ('.', '+', '|'), 9: ('.', "'", '^'), 127: ('.', '[', '|'), 85: ('.', '{', '^'), 1: ('.', '/', '^'), 15: ('.', '!', '^'), 11: ('.', '%', '^'), 2: ('.', ',', '^'), 4: ('.', '*', '^'), 8: ('.', '&', '^'), 7: ('.', ')', '^'), 13: ('.', '#', '^'), 110: ('.', '`', '|'), 78: ('.', '`', '^'), 3: ('.', '-', '^'), 117: ('.', '[', '^'), 5: ('.', '+', '^'), 6: ('.', '(', '^')}
+>>> specs.insert('@')
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    specs.insert('@')
+AttributeError: 'set' object has no attribute 'insert'
+>>> specs.push('@')
+Traceback (most recent call last):
+  File "<pyshell#66>", line 1, in <module>
+    specs.push('@')
+AttributeError: 'set' object has no attribute 'push'
+>>> help(set)
+Help on class set in module builtins:
+
+class set(object)
+ |  set() -> new empty set object
+ |  set(iterable) -> new set object
+ |  
+ |  Build an unordered collection of unique elements.
+ |  
+ |  Methods defined here:
+ |  
+ |  __and__(self, value, /)
+ |      Return self&value.
+ |  
+ |  __contains__(...)
+ |      x.__contains__(y) <==> y in x.
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |  
+ |  __iand__(self, value, /)
+ |      Return self&=value.
+ |  
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  __ior__(self, value, /)
+ |      Return self|=value.
+ |  
+ |  __isub__(self, value, /)
+ |      Return self-=value.
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __ixor__(self, value, /)
+ |      Return self^=value.
+ |  
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |  
+ |  __len__(self, /)
+ |      Return len(self).
+ |  
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  __or__(self, value, /)
+ |      Return self|value.
+ |  
+ |  __rand__(self, value, /)
+ |      Return value&self.
+ |  
+ |  __reduce__(...)
+ |      Return state information for pickling.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __ror__(self, value, /)
+ |      Return value|self.
+ |  
+ |  __rsub__(self, value, /)
+ |      Return value-self.
+ |  
+ |  __rxor__(self, value, /)
+ |      Return value^self.
+ |  
+ |  __sizeof__(...)
+ |      S.__sizeof__() -> size of S in memory, in bytes
+ |  
+ |  __sub__(self, value, /)
+ |      Return self-value.
+ |  
+ |  __xor__(self, value, /)
+ |      Return self^value.
+ |  
+ |  add(...)
+ |      Add an element to a set.
+ |      
+ |      This has no effect if the element is already present.
+ |  
+ |  clear(...)
+ |      Remove all elements from this set.
+ |  
+ |  copy(...)
+ |      Return a shallow copy of a set.
+ |  
+ |  difference(...)
+ |      Return the difference of two or more sets as a new set.
+ |      
+ |      (i.e. all elements that are in this set but not the others.)
+ |  
+ |  difference_update(...)
+ |      Remove all elements of another set from this set.
+ |  
+ |  discard(...)
+ |      Remove an element from a set if it is a member.
+ |      
+ |      If the element is not a member, do nothing.
+ |  
+ |  intersection(...)
+ |      Return the intersection of two sets as a new set.
+ |      
+ |      (i.e. all elements that are in both sets.)
+ |  
+ |  intersection_update(...)
+ |      Update a set with the intersection of itself and another.
+ |  
+ |  isdisjoint(...)
+ |      Return True if two sets have a null intersection.
+ |  
+ |  issubset(...)
+ |      Report whether another set contains this set.
+ |  
+ |  issuperset(...)
+ |      Report whether this set contains another set.
+ |  
+ |  pop(...)
+ |      Remove and return an arbitrary set element.
+ |      Raises KeyError if the set is empty.
+ |  
+ |  remove(...)
+ |      Remove an element from a set; it must be a member.
+ |      
+ |      If the element is not a member, raise a KeyError.
+ |  
+ |  symmetric_difference(...)
+ |      Return the symmetric difference of two sets as a new set.
+ |      
+ |      (i.e. all elements that are in exactly one of the sets.)
+ |  
+ |  symmetric_difference_update(...)
+ |      Update a set with the symmetric difference of itself and another.
+ |  
+ |  union(...)
+ |      Return the union of sets as a new set.
+ |      
+ |      (i.e. all elements that are in either set.)
+ |  
+ |  update(...)
+ |      Update a set with the union of itself and others.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  __hash__ = None
+
+>>> specs.add('@')
+>>> specs.add('$')
+>>> specs
+{'.', '"', '$', "'", '{', '@', '/', '!', '%', ',', '*', '&', ')', '#', '`', '-', '[', '+', '('}
+>>> posib()
+>>> for i in reqs:
+	print('req %d, in pos %d' %(i, i in possibles))
+
+	
+req 68, in pos 0
+req 72, in pos 0
+req 107, in pos 0
+req 76, in pos 0
+req 81, in pos 0
+req 117, in pos 1
+>>> possibles
+{46: ('.', '(', '|'), 12: ('.', '"', '^'), 10: ('.', '$', '^'), 47: ('.', '+', '|'), 9: ('.', "'", '^'), 127: ('.', '[', '|'), 85: ('.', '{', '^'), 1: ('.', '/', '^'), 15: ('.', '!', '^'), 11: ('.', '%', '^'), 2: ('.', ',', '^'), 4: ('.', '*', '^'), 8: ('.', '&', '^'), 7: ('.', ')', '^'), 13: ('.', '#', '^'), 110: ('.', '`', '|'), 78: ('.', '`', '^'), 3: ('.', '-', '^'), 117: ('.', '[', '^'), 5: ('.', '+', '^'), 6: ('.', '(', '^')}
+>>> specs
+{'.', '"', '$', "'", '{', '@', '/', '!', '%', ',', '*', '&', ')', '#', '`', '-', '[', '+', '('}
+>>> zspecs=zip(specs, map(ord, specs))
+	for i,j in zspecs:
+		for k,l in zspecs:
+			possibles[j|l]=(i,k,'|')
+			possibles[j^l]=(i,k,'^')
+			
+SyntaxError: multiple statements found while compiling a single statement
+>>> zspecs=zip(specs, map(ord, specs))
+
+	
+>>> for i,j in zspecs:
+		for k,l in zspecs:
+			possibles[j|l]=(i,k,'|')
+			possibles[j^l]=(i,k,'^')
+
+			
+>>> possibles
+{46: ('.', '(', '|'), 12: ('.', '"', '^'), 10: ('.', '$', '^'), 47: ('.', '+', '|'), 9: ('.', "'", '^'), 127: ('.', '[', '|'), 85: ('.', '{', '^'), 1: ('.', '/', '^'), 15: ('.', '!', '^'), 11: ('.', '%', '^'), 2: ('.', ',', '^'), 4: ('.', '*', '^'), 8: ('.', '&', '^'), 7: ('.', ')', '^'), 13: ('.', '#', '^'), 110: ('.', '`', '|'), 78: ('.', '`', '^'), 3: ('.', '-', '^'), 117: ('.', '[', '^'), 5: ('.', '+', '^'), 6: ('.', '(', '^')}
+>>> os
+"If a problem can't be solved with *regex*, it's a bad problem."
+>>> for i in os:
+	print('%s,%d'%(i,ord(i) in possibles))
+
+	
+I,0
+f,0
+ ,0
+a,0
+ ,0
+p,0
+r,0
+o,0
+b,0
+l,0
+e,0
+m,0
+ ,0
+c,0
+a,0
+n,1
+',0
+t,0
+ ,0
+b,0
+e,0
+ ,0
+s,0
+o,0
+l,0
+v,0
+e,0
+d,0
+ ,0
+w,0
+i,0
+t,0
+h,0
+ ,0
+*,0
+r,0
+e,0
+g,0
+e,0
+x,0
+*,0
+,,0
+ ,0
+i,0
+t,0
+',0
+s,0
+ ,0
+a,0
+ ,0
+b,0
+a,0
+d,0
+ ,0
+p,0
+r,0
+o,0
+b,0
+l,0
+e,0
+m,0
+.,1
+>>> specs
+{'.', '"', '$', "'", '{', '@', '/', '!', '%', ',', '*', '&', ')', '#', '`', '-', '[', '+', '('}
+>>> def posib():
+	zspecs=list(zip(specs, list(map(ord, specs))))
+	for i,j in zspecs:
+		for k,l in zspecs:
+			possibles[j|l]=(i,k,'|')
+			possibles[j^l]=(i,k,'^')
+
+			
+>>> posib()
+>>> possibles
+{46: ('(', '&', '|'), 12: ('(', '$', '^'), 10: ('(', '"', '^'), 47: ('(', '/', '|'), 9: ('(', '!', '^'), 127: ('[', '-', '|'), 85: ('{', '.', '^'), 1: ('(', ')', '^'), 15: ('(', "'", '^'), 11: ('(', '#', '^'), 2: ('(', '*', '^'), 4: ('(', ',', '^'), 8: ('+', '#', '^'), 7: ('(', '/', '^'), 13: ('(', '%', '^'), 110: ('`', '.', '|'), 78: ('`', '.', '^'), 3: ('(', '+', '^'), 117: ('[', '.', '^'), 5: ('(', '-', '^'), 6: ('(', '.', '^'), 0: ('(', '(', '^'), 34: ('"', '"', '|'), 38: ('&', '&', '|'), 39: ('#', '&', '|'), 123: ('(', '[', '|'), 89: ('{', '"', '^'), 98: ('`', '"', '|'), 35: ('#', '#', '|'), 14: ('(', '&', '^'), 42: ('(', '*', '|'), 43: ('(', '+', '|'), 66: ('`', '"', '^'), 121: ('[', '"', '^'), 36: ('$', '$', '|'), 95: ('{', '$', '^'), 100: ('`', '$', '|'), 37: ('%', '%', '|'), 44: ('(', ',', '|'), 45: ('(', '-', '|'), 68: ('`', '$', '^'), 92: ('{', "'", '^'), 103: ('`', "'", '|'), 71: ('`', "'", '^'), 124: ('[', "'", '^'), 59: ('[', '`', '^'), 84: ('/', '{', '^'), 90: ('!', '{', '^'), 94: ('%', '{', '^'), 87: (',', '{', '^'), 81: ('*', '{', '^'), 93: ('&', '{', '^'), 82: (')', '{', '^'), 88: ('#', '{', '^'), 27: ('[', '@', '^'), 86: ('-', '{', '^'), 32: ('[', '{', '^'), 80: ('+', '{', '^'), 83: ('(', '{', '^'), 64: ('@', '@', '|'), 111: ('`', '/', '|'), 97: ('`', '!', '|'), 101: ('`', '%', '|'), 108: ('`', ',', '|'), 106: ('`', '*', '|'), 102: ('`', '&', '|'), 105: ('`', ')', '|'), 99: ('`', '#', '|'), 96: ('`', '`', '|'), 109: ('-', '`', '|'), 91: ('[', '[', '|'), 107: ('+', '`', '|'), 104: ('(', '`', '|'), 79: ('`', '/', '^'), 116: ('[', '/', '^'), 33: ('!', '!', '|'), 41: ('(', ')', '|'), 65: ('`', '!', '^'), 122: ('[', '!', '^'), 69: ('`', '%', '^'), 126: ('[', '%', '^'), 76: ('`', ',', '^'), 119: ('[', ',', '^'), 74: ('`', '*', '^'), 113: ('[', '*', '^'), 70: ('`', '&', '^'), 125: ('[', '&', '^'), 73: ('`', ')', '^'), 114: ('[', ')', '^'), 67: ('`', '#', '^'), 120: ('[', '#', '^'), 77: ('-', '`', '^'), 75: ('+', '`', '^'), 72: ('(', '`', '^'), 118: ('[', '-', '^'), 112: ('+', '[', '^'), 115: ('(', '[', '^'), 40: ('(', '(', '|')}
+>>> for i in os:
+	print('%s,%d'%(i,ord(i) in possibles))
+
+	
+I,1
+f,1
+ ,1
+a,1
+ ,1
+p,1
+r,1
+o,1
+b,1
+l,1
+e,1
+m,1
+ ,1
+c,1
+a,1
+n,1
+',1
+t,1
+ ,1
+b,1
+e,1
+ ,1
+s,1
+o,1
+l,1
+v,1
+e,1
+d,1
+ ,1
+w,1
+i,1
+t,1
+h,1
+ ,1
+*,1
+r,1
+e,1
+g,1
+e,1
+x,1
+*,1
+,,1
+ ,1
+i,1
+t,1
+',1
+s,1
+ ,1
+a,1
+ ,1
+b,1
+a,1
+d,1
+ ,1
+p,1
+r,1
+o,1
+b,1
+l,1
+e,1
+m,1
+.,1
+>>> for i in reqs:
+	print('req %d, in pos %d' %(i, i in possibles))
+
+	
+req 68, in pos 1
+req 72, in pos 1
+req 107, in pos 1
+req 76, in pos 1
+req 81, in pos 1
+req 117, in pos 1
+>>> trans=[]
+>>> s
+'Hail the Dark Lord Quantum!'
+>>> for i in s:
+	trans += possibles[ord(s)]
+
+	
+Traceback (most recent call last):
+  File "<pyshell#99>", line 2, in <module>
+    trans += possibles[ord(s)]
+TypeError: ord() expected a character, but string of length 27 found
+>>> for i in s:
+	trans += possibles[ord(i)]
+
+	
+>>> trans
+['(', '`', '^', '`', '!', '|', '`', ')', '|', '`', ',', '|', '[', '{', '^', '[', '/', '^', '(', '`', '|', '`', '%', '|', '[', '{', '^', '`', '$', '^', '`', '!', '|', '[', ')', '^', '+', '`', '|', '[', '{', '^', '`', ',', '^', '`', '/', '|', '[', ')', '^', '`', '$', '|', '[', '{', '^', '*', '{', '^', '[', '.', '^', '`', '!', '|', '`', '.', '|', '[', '/', '^', '[', '.', '^', '-', '`', '|', '!', '!', '|']
+>>> trans=[]
+>>> for i in s:
+	trans.append(possibles[ord(i)])
+
+	
+>>> trans
+[('(', '`', '^'), ('`', '!', '|'), ('`', ')', '|'), ('`', ',', '|'), ('[', '{', '^'), ('[', '/', '^'), ('(', '`', '|'), ('`', '%', '|'), ('[', '{', '^'), ('`', '$', '^'), ('`', '!', '|'), ('[', ')', '^'), ('+', '`', '|'), ('[', '{', '^'), ('`', ',', '^'), ('`', '/', '|'), ('[', ')', '^'), ('`', '$', '|'), ('[', '{', '^'), ('*', '{', '^'), ('[', '.', '^'), ('`', '!', '|'), ('`', '.', '|'), ('[', '/', '^'), ('[', '.', '^'), ('-', '`', '|'), ('!', '!', '|')]
+>>> transs=map(lambda tup: '(\'%s\'%s\'%s\')'%(tup[0],tup[2],tup[1]),trans)
+>>> 
+>>> trans
+[('(', '`', '^'), ('`', '!', '|'), ('`', ')', '|'), ('`', ',', '|'), ('[', '{', '^'), ('[', '/', '^'), ('(', '`', '|'), ('`', '%', '|'), ('[', '{', '^'), ('`', '$', '^'), ('`', '!', '|'), ('[', ')', '^'), ('+', '`', '|'), ('[', '{', '^'), ('`', ',', '^'), ('`', '/', '|'), ('[', ')', '^'), ('`', '$', '|'), ('[', '{', '^'), ('*', '{', '^'), ('[', '.', '^'), ('`', '!', '|'), ('`', '.', '|'), ('[', '/', '^'), ('[', '.', '^'), ('-', '`', '|'), ('!', '!', '|')]
+>>> transs=list(transs)
+>>> transs
+["('('^'`')", "('`'|'!')", "('`'|')')", "('`'|',')", "('['^'{')", "('['^'/')", "('('|'`')", "('`'|'%')", "('['^'{')", "('`'^'$')", "('`'|'!')", "('['^')')", "('+'|'`')", "('['^'{')", "('`'^',')", "('`'|'/')", "('['^')')", "('`'|'$')", "('['^'{')", "('*'^'{')", "('['^'.')", "('`'|'!')", "('`'|'.')", "('['^'/')", "('['^'.')", "('-'|'`')", "('!'|'!')"]
+>>> transss='.'.join(transs)
+>>> 
+>>> transss
+"('('^'`').('`'|'!').('`'|')').('`'|',').('['^'{').('['^'/').('('|'`').('`'|'%').('['^'{').('`'^'$').('`'|'!').('['^')').('+'|'`').('['^'{').('`'^',').('`'|'/').('['^')').('`'|'$').('['^'{').('*'^'{').('['^'.').('`'|'!').('`'|'.').('['^'/').('['^'.').('-'|'`').('!'|'!')"
+>>> '!'|'!'
+Traceback (most recent call last):
+  File "<pyshell#115>", line 1, in <module>
+    '!'|'!'
+TypeError: unsupported operand type(s) for |: 'str' and 'str'
+>>> ord('!')
+33
+>>> 33|33
+33

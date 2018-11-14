@@ -1,0 +1,19 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   localchat.py
+#	new file:   testclient.py
+#	new file:   testserver.py
+#
+# Changes not staged for commit:
+#	deleted:    Factor/.vscode/launch.json
+#	deleted:    Factor/.vscode/tasks.json
+#	deleted:    Factor/main/main.cpp
+#	deleted:    Factor/main/main.h
+#	deleted:    Factor/main/primefinder.cpp
+#	deleted:    Factor/main/primefinder.h
+New TCP stuff :)

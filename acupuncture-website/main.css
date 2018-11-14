@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.container{
+	max-width: 100%;
+	width: 100%;
+}
+
+.base-margin{
+	margin: 20px;
+}
+
+.heading{
+	align-content: center;
+	align-items: center;
+}
+
+/* .title div{
+	border: 5px solid black;
+} */
+
+.center-block {
+	float: none;
+}
+
+.slide{
+	width: 700px;
+}
+
+.about-title{
+	font-size: 39pt;
+}
+
+.about-text{
+	font-size: 19pt;
+}

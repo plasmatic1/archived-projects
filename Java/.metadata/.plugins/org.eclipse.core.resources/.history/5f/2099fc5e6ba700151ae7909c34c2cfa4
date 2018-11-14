@@ -1,0 +1,11 @@
+package me.tlwv2.program;
+
+import javafx.application.*;
+
+public class TGame{
+
+	public TGame() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

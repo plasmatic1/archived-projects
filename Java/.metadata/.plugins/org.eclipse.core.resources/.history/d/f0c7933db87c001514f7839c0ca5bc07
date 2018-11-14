@@ -1,0 +1,25 @@
+package me.tlwv2.api;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+public class Rectangle {
+	private int x;
+	private int y;
+	private int xSize;
+	private int ySize;
+	private ColorScheme scheme;
+	
+	public Rectangle(int x, int y, int xSize, int ySize, ColorScheme scheme){
+		this.x = x;
+		this.y = y;
+		this.xSize = xSize;
+		this.ySize = ySize;
+		this.scheme = scheme;
+	}
+	
+	public void paint(Graphics g){
+		Graphics2D = (Graphics2D) g;
+	}
+}

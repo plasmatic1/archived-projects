@@ -1,0 +1,13 @@
+#clicks_normal{
+	-fx-text-fill: #000000;
+}
+
+#clicks_complete{
+	-fx-text-fill: #00FF00;
+}
+
+.deflabel{
+	-fx-font-family: "Pusab", "Comic Sans MS";
+	-fx-font-size: 20pt;
+	-fx-alignment: center-left;
+}

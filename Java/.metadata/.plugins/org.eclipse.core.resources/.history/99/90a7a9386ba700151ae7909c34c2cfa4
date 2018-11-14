@@ -1,0 +1,9 @@
+package me.tlwv2.program;
+
+public class TGame{
+
+	public TGame() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

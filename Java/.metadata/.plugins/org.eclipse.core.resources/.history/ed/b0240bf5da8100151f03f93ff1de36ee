@@ -1,0 +1,15 @@
+package me.tlwv2.program;
+
+import javax.swing.JFrame;
+
+public class MathMain extends JFrame{
+	JPanel top = new JPanel();
+	
+	public MathMain(){
+		
+	}
+	
+	public static void main(String[] args){
+		new MathMain();
+	}
+}

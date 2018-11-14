@@ -1,0 +1,8 @@
+package me.tlwv2.program;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Constants extends JFrame{
+	JPanel top = new JPanel();
+}

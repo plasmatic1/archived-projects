@@ -1,0 +1,44 @@
+package me.tlwv2.program;
+
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+import me.tlwv2.api.Images;
+
+@SuppressWarnings("serial")
+public class TTTMain extends JFrame{
+	static Toolkit tk = Toolkit.getDefaultToolkit();
+	
+	public static JPanel options = new JPanel();
+	public static JPanel game = new JPanel();
+	
+	public static JLabel space1_1 = new JLabel(new Images().getNullImage());
+	public static JLabel space1_2 = new JLabel(new Images().getNullImage());
+	public static JLabel space1_3 = new JLabel(new Images().getNullImage());
+	public static JLabel space2_1 = new JLabel(new Images().getNullImage());
+	public static JLabel space2_2 = new JLabel(new Images().getNullImage());
+	public static JLabel space2_3 = new JLabel(new Images().getNullImage());
+	public static JLabel space3_1 = new JLabel(new Images().getNullImage());
+	public static JLabel space3_2 = new JLabel(new Images().getNullImage());
+	public static JLabel space3_3 = new JLabel(new Images().getNullImage());
+	
+	public static JLabel[] row1 = {space1_1, space1_2, space1_3):
+
+	public TTTMain() {
+		int width = (int) (400 * (tk.getScreenSize().getWidth() / 1920));
+		int height = (int) (400 * (tk.getScreenSize().getHeight() / 1080));
+		
+		this.setSize(width, height);
+		this.setTitle("Tic Tac Toe");
+		this.setVisible(true);
+		this.setLocationRelativeTo(null);
+	}
+	
+	public static void main(String[] args){
+		new TTTMain();
+	}
+
+}

@@ -1,0 +1,10 @@
+package me.tlwv2.api;
+
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+
+public class Images {
+	BufferedImage xImage = getClass().getResource("../../../assets/space_x.png");
+	ImageIcon x = new ImageIcon(xImage);
+}

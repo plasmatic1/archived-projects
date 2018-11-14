@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;UFO/src/tlwv2.ufo&apos;&#x0D;&#x0A;- Original project: &apos;JavaFX&apos;&#x0D;&#x0A;- Destination element: &apos;UFO/src/tlwv2.ufo&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     timepline.ShapeSide.java&#x0D;&#x0A;     timepline.Animations.java" description="Copy compilation units" destination="=UFO/src&lt;tlwv2.ufo" element1="/src&lt;timepline{ShapeSide.java" element2="/src&lt;timepline{Animations.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1456364646186" units="2" version="1.0"/>
+</session>

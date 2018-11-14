@@ -1,0 +1,13 @@
+package me.tlwv2.program;
+
+public class TTTMain extends JFrame{
+
+	public TTTMain() {
+		this.set
+	}
+	
+	public static void main(String[] args){
+		new TTTMain();
+	}
+
+}

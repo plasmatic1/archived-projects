@@ -1,0 +1,45 @@
+package me.tlwv2.program;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.Timer;
+
+@SuppressWarnings("serial")
+public class MathMain extends JFrame{
+	int num1 = 0;
+	int num2 = 0;
+	int answer = 0;
+	
+	int timeLeft = 1000;
+	int difficulty = 0;
+	
+	String operation = "+";
+	String[] difficulties = {"Easy", "Normal", "Hard", "3XTR3M3"};
+	
+	JPanel top = new JPanel();
+	JPanel middle = new JPanel();
+	JPanel beforeStart = new JPanel();
+	JPanel lost = new JPanel();
+	
+	JButton checkAnswer = new JButton("Submit Answer");
+	JButton start = new JButton("Start Math Game");
+	JButton restart = new JButton("Restart");
+	
+	JLabel timeLeftTxt = new JLabel("Time Left: " + timeLeft);
+	
+	public MathMain(){
+		this.setTitle("Extreme Math Game");
+		this.setSize(400, 400);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	
+	public static void main(String[] args){
+		new MathMain();
+	}
+	
+	public void setup(){
+		
+	}
+}

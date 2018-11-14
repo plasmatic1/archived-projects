@@ -1,0 +1,39 @@
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+
+public class App1 extends Application{
+	public Button btn = new Button();
+
+	public App1() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		BorderPane pane = new BorderPane();
+		
+		btn.setText("Click this button");
+		btn.setOnAction(e -> onBtnClick());
+		
+		pane.getChildren().add(btn);
+		
+		Scene ms = new Scene(pane, 300, 300);
+		
+		stage.setScene(ms);
+	}
+	
+	public void onBtnClick(){
+		if(btn.getText().equals("Click this button")){
+			btn.setText("Clicked!");
+		}
+	}
+	
+	public static void main(String[] args){
+		launch(args);
+	}
+
+}

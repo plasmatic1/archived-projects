@@ -1,0 +1,19 @@
+public class RaceCarMain {
+
+    public static void main(String[] args) {
+        
+        //create two new race car objects with parameters for the colour and speed
+        RaceCar ferrari = new RaceCar("red", 300);
+        RaceCar theHomer = new RaceCar("nasty", 0);
+        
+        //who are the drivers for each car at the moment?
+        
+        ferrari.setDriver("Kyle");
+        theHomer.setDriver("Bush");
+        
+        //who are the drivers for each car now?
+
+        
+    }
+
+}

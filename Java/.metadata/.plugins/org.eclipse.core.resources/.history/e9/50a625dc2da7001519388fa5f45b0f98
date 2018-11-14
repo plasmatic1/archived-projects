@@ -1,0 +1,67 @@
+package me.tlwv2.api;
+
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+
+public class Images {
+	
+	public static ImageIcon getXImage(){
+		try {
+			BufferedImage xImage = ImageIO.read(getClass().getResource("../../../assets/space_x.png"));
+			ImageIcon x = new ImageIcon(xImage);
+			return x;
+		} 
+		catch (IOException e) {
+			System.out.println("Could not find image!");
+			System.out.println("In method getXImage()");
+			
+			return null;
+		}
+		
+	}
+	
+	public static ImageIcon getOImage(){
+		try {
+			BufferedImage xImage = ImageIO.read(getClass().getResource("../../../assets/space_o.png"));
+			ImageIcon x = new ImageIcon(xImage);
+			return x;
+		} 
+		catch (IOException e) {
+			System.out.println("Could not find image!");
+			System.out.println("In method getOImage()");
+			
+			return null;
+		}
+	}
+	
+	public static ImageIcon getEmptyImage(){
+		try { 
+			BufferedImage xImage = ImageIO.read(getClass().getResource("../../../assets/space_empty.png"));
+			ImageIcon x = new ImageIcon(xImage);
+			return x;
+		} 
+		catch (IOException e) {
+			System.out.println("Could not find image!");
+			System.out.println("In method getEmptyImage()");
+			
+			return null;
+		}
+	}
+	
+	public static ImageIcon getNullImage(){
+		try { 
+			BufferedImage xImage = ImageIO.read(getClass().getResource("../../../assets/space_null.png"));
+			ImageIcon x = new ImageIcon(xImage);
+			return x;
+		} 
+		catch (IOException e) {
+			System.out.println("Could not find image!");
+			System.out.println("In method getNullImage()");
+			
+			return null;
+		}
+	}
+}

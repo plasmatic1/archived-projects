@@ -1,0 +1,12 @@
+package me.tlwv2.api;
+
+public class Method<E> {
+	private m method = new m<E>() {
+		
+	};
+	
+	public Method() {
+		
+	}
+
+}

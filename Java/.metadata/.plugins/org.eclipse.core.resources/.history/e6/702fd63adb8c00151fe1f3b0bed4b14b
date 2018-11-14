@@ -1,0 +1,9 @@
+package me.tlwv2.api;
+
+public class Method {
+
+	public Method() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

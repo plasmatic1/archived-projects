@@ -1,0 +1,11 @@
+package me.tlwv2.tictactoe.game;
+
+import javafx.application.*;
+
+public class MainGame{
+
+	public MainGame() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

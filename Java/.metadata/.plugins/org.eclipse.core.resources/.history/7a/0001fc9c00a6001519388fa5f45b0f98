@@ -1,0 +1,9 @@
+package me.tlwv2.program;
+
+public class TTTMain extends JFrame{
+
+	public TTTMain() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

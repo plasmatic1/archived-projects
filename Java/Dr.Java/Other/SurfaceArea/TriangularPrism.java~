@@ -1,0 +1,10 @@
+public class TriangularPrism{
+  private double SurfaceAreaTPrism;
+  public TriangularPrism(int base, int height, double a, int b){
+    SurfaceAreaTPrism = (base * height)/2 + a * b + b * base + height * b;
+  }
+
+  public double getSurfaceAreaTPrism(){
+    return SurfaceAreaTPrism;
+  }
+}

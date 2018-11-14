@@ -1,0 +1,34 @@
+import java.io.*;
+
+public class StudentMain{
+  public static void main(String [] args)throws IOException{
+    String wantedAction;
+    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+    
+    Student student10477 = new Student(10477);
+    Student student10478 = new Student(10478);
+    Student student10479 = new Student(10479);
+    Student student10480 = new Student(10480);
+    Student student10481 = new Student(10481);
+    Student student10482 = new Student(10482);
+    Student student10483 = new Student(10483);
+    Student student10484 = new Student(10484);
+  
+    student10477.setGrade(70);
+    student10478.setGrade(85);
+    student10479.setGrade(90);
+    student10480.setGrade(88);
+    student10481.setGrade(75);
+    student10482.setGrade(73);
+    student10483.setGrade(89);
+    student10484.setGrade(100);
+    
+    for(int i = 5; i < 100; i--){
+      ln("Would you like to do...");
+    }
+  }
+  
+  public static void ln(String inp){
+    System.out.println(inp);
+  }
+}

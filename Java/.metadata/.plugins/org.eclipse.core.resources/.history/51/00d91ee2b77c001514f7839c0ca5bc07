@@ -1,0 +1,13 @@
+package me.tlwv2.api;
+
+import java.awt.Color;
+
+import javax.swing.JComponent;
+
+public class Shapes{
+	
+}
+
+public class Rectangle extends JComponent{
+	
+}

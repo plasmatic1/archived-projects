@@ -1,0 +1,24 @@
+package ProgressTest;
+
+import java.awt.TextArea;
+
+import javafx.application.Application;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.stage.Stage;
+
+public class ProgressBarTest extends Application {
+	private ProgressBar br = new ProgressBar(0.0);
+	private Label clicks_l = new Label("0/0");
+	private TextArea inputName = new TextArea();
+	private Button start = new Button();
+	
+	private int clicks = 0;
+	
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		
+	}
+
+}

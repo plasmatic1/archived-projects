@@ -1,0 +1,36 @@
+package me.tlwv2.program;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class MathMain extends JFrame{
+	int num1 = 0;
+	int num2 = 0;
+	int answer = 0;
+	
+	String operation = "+";
+	
+	JPanel top = new JPanel();
+	JPanel middle = new JPanel();
+	
+	JButton checkAnswer = new JButton("Submit Answer");
+	JLabel timeLeft = new JLabel("Time Left");
+	
+	JPanel beforeStart = new JPanel();
+	
+	public MathMain(){
+		this.setSize(400, 400);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	
+	public static void main(String[] args){
+		new MathMain();
+	}
+	
+	public void setup(){
+		
+	}
+}

@@ -1,0 +1,9 @@
+package me.tlwv2.tictactoe.game;
+
+public class MainGame {
+
+	public MainGame() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

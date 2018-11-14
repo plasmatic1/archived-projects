@@ -1,0 +1,21 @@
+package me.tlwv2.api;
+
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+
+public class Images {
+	public ImageIcon getXImage(){
+		BufferedImage xImage;
+		try {
+			xImage = ImageIO.read(getClass().getResource("../../../assets/space_x.png"));
+		} catch (IOException e) {
+			System.out.println("Could not find image!");
+		}
+		ImageIcon x = new ImageIcon(xImage);
+		
+		return x;
+	}
+}

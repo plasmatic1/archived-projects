@@ -1,0 +1,58 @@
+import java.io.*;
+
+public class poop{
+
+  public static void main(String [] args) throws IOException{
+    
+    String answer;
+    
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("Would you like hot or cold");
+    System.out.println("Please use lowercase");
+    answer = br.readLine();
+    
+    if(answer.equals("hot")){
+      System.out.println("which drink would you like to choose?");
+      System.out.println("tea");
+      System.out.println("coffee");
+      answer = "";
+      
+      answer = br.readLine();
+      
+      if(answer.equals("coffee")){
+        System.out.println("Here is your coffee");
+        System.out.println("http://www.timhortons.com/");
+      }
+      else if(answer.equals("tea")){
+        System.out.println("Here is your tea");
+        System.out.println("http://www.teavana.com/tea-products/most-popular?cm_mmc=Google-_-Tea-_-GS_Tea_Shop-_-tea%20shop_e&gclid=CLXJy8PHvsMCFQNk7AodKyoAjA");
+      }
+      else{
+        System.out.println("You should go to a psychologist");
+      }
+    }
+    else if(answer.equals("cold")){
+      System.out.println("Which drink would you like?");
+      System.out.println("coke");
+      System.out.println("sprite");
+      answer = "";
+      
+      answer = br.readLine();
+      
+      if(answer.equals("coke")){
+        System.out.println("Here is your coke:");
+        System.out.println("http://us.coca-cola.com/home/");
+      }
+      else if(answer.equals("sprite")){
+        System.out.println("Here is your sprite:");
+        System.out.println("http://www.amazon.com/Sprite-Soda-7-5oz-Packs-Small/dp/B0080SPIEM");
+      }
+      else{
+        System.out.println("you should go to a psychologist");
+      }
+    }
+    else{
+      System.out.println("You should see a psychologist");
+    }
+  }
+}

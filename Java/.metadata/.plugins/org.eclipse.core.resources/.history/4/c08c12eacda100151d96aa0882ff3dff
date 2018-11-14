@@ -1,0 +1,9 @@
+package me.tlwv2.api;
+
+public class Images {
+
+	public Images() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

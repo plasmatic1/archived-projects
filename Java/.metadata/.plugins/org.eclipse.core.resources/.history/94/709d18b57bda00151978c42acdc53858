@@ -1,0 +1,54 @@
+package ctimer.me.tlwv2;
+
+import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.layout.StackPane;
+
+/*
+ * "pb" is the css styling for the progressbar
+ * "lb" is the css styling for the label
+ */
+public class TimerBar extends StackPane {
+	
+	private ProgressBar bar;
+	private Label text;
+
+	public TimerBar() {
+		bar.setProgress(0);
+		text.setText("0.0");
+		
+		this.getChildren().add(bar);
+		this.getChildren().add(text);
+		
+		bar.setId("pb");
+		text.setId("lb");
+		
+		bar.applyCss();
+		text.applyCss();
+	}
+	
+	public void setProgress(double progress, String lbltxt){
+		String text = lbltxt + ": ";
+		
+		bar.setProgress(progress);
+		text.setText(text);
+	}
+
+	public TimerBar(Node... children) {
+		super(children);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public enum ProgressType{
+		PRECENT(1, "$PERCp1%"), DOUBLE(1, "p1"), FRACTION(2, "p1/p2"), TEXT(1, "p1");
+		
+		ProgressType(int argcount, String argfocus){
+			
+		}
+		
+		public String textOf(double[] params){
+			
+		}
+	}
+}

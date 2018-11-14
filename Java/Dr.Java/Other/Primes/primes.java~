@@ -1,0 +1,11 @@
+import java.io.*;
+
+public class primes{
+  public static void main(String [] args)Throws IOEXception{
+    
+  }
+  
+  public void in(String inp){
+    System.out.println(inp);
+  }
+}

@@ -1,0 +1,33 @@
+package ProgressTest;
+
+import java.awt.TextArea;
+
+import javafx.application.Application;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.stage.Stage;
+
+public class ProgressBarTest extends Application {
+	public static final String[] RANKS = {"Clicker", "Clicker II", "Clicker III", "Fapper", "Fapper II", "ULTRA FAPPER", "ULTRA FAPPER II", "GOD", "GOD II", "GOD III", "GOD IV", "GOD V", "DIVINE FORCE", "ULTIMATE DIVINE FORCE", "THE ULTIMATE", "II THE ULTIMATE II", "III THE ULTIMATE III", "Cyclic"};
+	
+	private ProgressBar br = new ProgressBar(0.0);
+	private Label clicks_l = new Label("0/0");
+	private Label rank_l = new Label("Clicker");
+	private Label name_l = new Label("Player");
+	private TextArea inputName = new TextArea();
+	private Button start = new Button();
+	
+	private int clicks = 0;
+	private String rank;
+	private String name;
+	private int clickReq = 100;
+	
+	private int time = 0;
+	
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		
+	}
+
+}

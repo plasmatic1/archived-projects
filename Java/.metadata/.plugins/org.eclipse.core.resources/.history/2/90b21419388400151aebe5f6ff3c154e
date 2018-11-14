@@ -1,0 +1,154 @@
+package me.tlwv2.program;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.TimerTask;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+
+@SuppressWarnings("serial")
+public class MathMain extends JFrame{
+	public static int num1 = 0;
+	public static int num2 = 0;
+	public static int answer = 0;
+	
+	public static int timeLeft = 1000;
+	public static int difficulty = 0;
+	
+	public static int userAnswer = 0;
+	public static int testvar = 0;
+	
+	public static Font h1 = new Font("Pusab", 30, 30);
+	public static Font defT = new Font("Pusab", 15, 15);
+	
+	public static boolean hasLost = false;
+	public static boolean started = false;
+	
+	public static String operation = Constants.OP_PLUS;
+	public static String[] difficulties = {"Easy", "Normal", "Hard", "3XTR3M3"};
+	
+	public static JPanel top = new JPanel();
+	public static JPanel middle = new JPanel();
+	public static JPanel beforeStart = new JPanel();
+	public static JPanel beforeStartOpt = new JPanel();
+	public static JPanel lost = new JPanel();
+	
+	public static JButton checkAnswer = new JButton("Submit Answer");
+	public static JButton start = new JButton("Start Math Game");
+	public static JButton restart = new JButton("Restart");
+	
+	public static JLabel timeLeftTxt = new JLabel("Time Left: " + timeLeft);
+	public static JLabel title = new JLabel("XTreme Math Game");
+	
+	public static JComboBox<String> difficultySelector = new JComboBox<String>(difficulties);
+	
+	public MathMain(){
+		this.setTitle("Extreme Math Game");
+		this.setSize(400, 400);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setResizable(false);
+		
+		this.setVisible(true);
+		
+		setup();
+		
+		this.add(beforeStart, BorderLayout.NORTH);
+		this.add(beforeStartOpt);
+		
+		this.add(top, BorderLayout.NORTH);
+		this.add(middle);
+		
+		this.add(lost);
+		
+		
+		
+		new java.util.Timer().scheduleAtFixedRate(new TimerTask() {
+			@Override
+			public void run() {
+				
+				if(started){
+					timeLeft--;
+				}
+				
+				if(timeLeft <= 0 && started){
+					hasLost = true;
+				}
+			}
+		}, 1000, 50);
+	}
+	
+	public static void main(String[] args){
+		new MathMain();
+	}
+	
+	public void setup(){
+		title.setFont(h1);
+		title.setHorizontalAlignment(SwingConstants.CENTER);
+		title.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+		
+		beforeStart.add(title, BorderLayout.NORTH);
+		
+		start.setFont(defT);
+		start.addActionListener(new ButtonListener());
+		start.setVisible(true);
+		
+		beforeStartOpt.add(start, BorderLayout.AFTER_LAST_LINE);
+		
+		difficultySelector.setFont(defT);
+		difficultySelector.setEditable(false);
+		
+		beforeStartOpt.add(difficultySelector);
+		
+		beforeStart.setVisible(true);
+		beforeStartOpt.setVisible(true);
+		
+		//When Started
+		
+		timeLeftTxt.setFont(defT);
+		timeLeftTxt.setHorizontalAlignment(SwingConstants.CENTER);
+		timeLeftTxt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+		
+		top.add(timeLeftTxt);
+		
+		checkAnswer.setFont(defT);
+		checkAnswer.addActionListener(new ButtonListener());
+		
+		top.add(checkAnswer);
+	}
+	
+	public int[] generateQuestion(int min, int max, String[] operations){
+		return null;
+	}
+}
+
+class ButtonListener implements ActionListener{
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == MathMain.start){
+			MathMain.started = true;
+			
+			MathMain.beforeStart.setVisible(false);
+			MathMain.beforeStartOpt.setVisible(false);
+			
+			MathMain.top.setVisible(true);
+			MathMain.middle.setVisible(true);
+			
+			System.out.println("Game Started!");
+			
+			MathMain.difficulty = MathMain.difficultySelector.getSelectedIndex();
+			System.out.println("Difficulty is: " + MathMain.difficulty);
+		}
+		
+	}
+	
+}

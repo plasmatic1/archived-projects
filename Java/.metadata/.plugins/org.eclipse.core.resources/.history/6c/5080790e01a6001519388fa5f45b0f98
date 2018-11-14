@@ -1,0 +1,19 @@
+package me.tlwv2.program;
+
+import java.awt.Toolkit;
+
+public class TTTMain extends JFrame{
+	Toolkit tk = Toolkit.getDefaultToolkit();
+
+	public TTTMain() {
+		int width = 400 * (tk.getScreenSize().getWidth() / 1920);
+		int height = 400 * (tk.getScreenSize().getHeight() / 1080);
+		
+		this.set
+	}
+	
+	public static void main(String[] args){
+		new TTTMain();
+	}
+
+}

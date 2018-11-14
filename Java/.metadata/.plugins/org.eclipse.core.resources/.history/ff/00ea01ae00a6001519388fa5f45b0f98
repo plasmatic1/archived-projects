@@ -1,0 +1,18 @@
+package me.tlwv2.program;
+
+import java.awt.Toolkit;
+
+public class TTTMain extends JFrame{
+	Toolkit tk = Toolkit.getDefaultToolkit();
+
+	public TTTMain() {
+		int 
+		
+		this.set
+	}
+	
+	public static void main(String[] args){
+		new TTTMain();
+	}
+
+}

@@ -1,0 +1,21 @@
+package me.tlwv2.api;
+
+import java.awt.Color;
+
+public class Shapes{
+	
+}
+
+public class Rectangle extends JComponent{
+	private int x;
+	private int y;
+	private int xSize;
+	private int ySize;
+	
+	public Rectangle(int x, int y, int xSize, int ySize, Color stroke){
+		this.x = x;
+		this.y = y;
+		this.xSize = xSize;
+		this.ySize = ySize;
+	}
+}

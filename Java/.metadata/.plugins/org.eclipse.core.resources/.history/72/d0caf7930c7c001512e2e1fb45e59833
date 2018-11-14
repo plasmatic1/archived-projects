@@ -1,0 +1,37 @@
+package me.tlwv2;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+@SuppressWarnings("serial")
+public class Paint extends JFrame{
+	JButton rectBtn, ellipseBtn, lineBtn, colourBtn;
+	
+	public static void main(String[] args){
+		
+	}
+	
+	public Paint(){
+		this.setSize(500, 500);
+		this.setTitle("Paint Program");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
+
+private class Rectangle extends JComponent{
+	private int x;
+	private int y;
+	private int xSize;
+	private int ySize;
+	
+	private Color stroke;
+	private Color fill;
+	private int StrokeSize;
+	
+	public Rectangle(int x, int y, int xSize, int ySize, Color stroke){
+		this.x = x;
+		this.y = y;
+		this.xSize = xSize;
+		this.ySize = ySize;
+	}
+}
